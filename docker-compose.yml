@@ -4,10 +4,15 @@ services:
     container_name: pet_postgres
     restart: unless-stopped
 
+    #
+    # Extensiones
+    #
+    command: postgres -c shared_preload_libraries=pg_stat_statements
+
     # Solo para desarollo local
     #
     # ports:
-    #   - "5432:5432"
+    #  - "5432:5432"
 
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -36,7 +41,7 @@ services:
     #
     # ports:
     #   - "${PORT}:${PORT}"
-    
+
     environment:
       PORT: "${PORT}"
       NODE_ENV: "${NODE_ENV}"
@@ -46,12 +51,14 @@ services:
       STATIC: "${STATIC}"
       CSRF_BETTER: "${CSRF_BETTER}"
       CORS: "${CORS}"
+    volumes:
+      - ./static:/app/static
     depends_on:
       postgres:
         condition: service_healthy
     networks:
       - app-network
-      
+
   frontend:
     image: ghcr.io/baa4ts/pet-frontend:latest
     restart: unless-stopped
