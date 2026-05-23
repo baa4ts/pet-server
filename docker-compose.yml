@@ -29,7 +29,7 @@ services:
       - app-network
 
   backend:
-    image: ghcr.io/baa4ts/pet-backend-beta:latest
+    image: ghcr.io/baa4ts/pet-backend:latest
     restart: unless-stopped
 
     # Solo para desarollo local
@@ -51,8 +51,9 @@ services:
         condition: service_healthy
     networks:
       - app-network
+      
   frontend:
-    image: ghcr.io/baa4ts/pet-frontend-beta-4:latest
+    image: ghcr.io/baa4ts/pet-frontend:latest
     restart: unless-stopped
     networks:
       - app-network
