@@ -622,6 +622,6 @@ ALTER TABLE ONLY public.session
 --
 -- PostgreSQL database dump complete
 --
-SELECT pg_stat_statements_reset();
+-- SELECT pg_stat_statements_reset();
 \unrestrict RQUUHaDwjq6sBaFODWl1Gdfcn96qXtA8SR0K7cLmkX9h7zSm6monbBzVsIiYDPL
 
