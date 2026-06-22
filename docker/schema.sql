@@ -345,7 +345,7 @@ gpvSjc3g9C0bL9zY0WiJoApnz3iwvfrK	2026-05-23 17:41:44.068	KYzZtGzXOToZHwKJUamgZep
 COPY public.usuarios (id, name, email, "emailVerified", image, "createdAt", "updatedAt", permisos) FROM stdin;
 aXVrxjuPaTfBoIjy8tjZsWGTDac9Hbj4	yei	yeir@yeir.com	f	\N	2026-05-23 17:21:43.806	2026-05-23 17:21:43.806	
 u5jWdvtZnggzVe44gu4l1cbprTBNsUgL	rula	rula@rula.com	f	\N	2026-05-23 17:21:44.054	2026-05-23 17:21:44.054	
-pM9vBBQyY56C7RspHdQvL4W57G7PnMZG	Admin	admin@admin.com	f	\N	2026-05-23 17:21:43.48	2026-05-23 17:21:44.097	ausencias,eventos,noticias,usuarios,recursos,permisos,analitica
+pM9vBBQyY56C7RspHdQvL4W57G7PnMZG	Admin	admin@admin.com	f	\N	2026-05-23 17:21:43.48	2026-05-23 17:21:44.097	examenes,eventos,noticias,usuarios,recursos,permisos,analitica
 \.
 
 
